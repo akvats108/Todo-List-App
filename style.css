@@ -1,0 +1,102 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgb(219, 251, 251);
+    font-size: 16px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+#todo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#taskInput {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#addTask {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    background-color: rgb(40, 39, 39);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addTask:hover {
+    background-color: green;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.listItem {
+    margin: 7px;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deleteButton {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    #todo {
+        width: 80%;
+    }
+}
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+ 
